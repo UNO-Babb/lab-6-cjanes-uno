@@ -1,7 +1,7 @@
 #WordIndex.py
-#Name:
-#Date:
-#Assignment:
+#Name: Colton Janes
+#Date: 03/02/2025
+#Assignment: Lab 6 - WordIndex
 
 def main():
   textFile = open("fish.txt", 'r')

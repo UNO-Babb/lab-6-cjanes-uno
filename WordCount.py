@@ -1,7 +1,7 @@
 #WordCount.py
-#Name:
-#Date:
-#Assignment:
+#Name: Colton Janes
+#Date: 03/02/2025
+#Assignment: Lab 6 - WordCount
 
 def main():
   textFile = open("gettysberg.txt", 'r')
