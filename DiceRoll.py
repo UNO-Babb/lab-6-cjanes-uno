@@ -8,9 +8,10 @@ def main():
   #Create an empty list with possible roll values
   #Ammended below to be 11, not 12 positions as I kept getting 13 : 0 in output
   rolls = [0,0,0,0,0,0,0,0,0,0,0]
+  maxRolls = 10000
   
-  #Create two dice values ranging from 1 - 6 each and roll 100 times
-  for r in range(100):
+  #Create two dice values ranging from 1 - 6 each and roll 10,000 times
+  for r in range(maxRolls):
     dice1 = random.randint(1,6)
     dice2 = random.randint(1,6)
 
@@ -20,9 +21,10 @@ def main():
 
   #print statictics for dice rolls
   dice = 2
-  print("Dice Total : Count")
+  print("Die Value : Count : Percentage of Rolls")
   for count in rolls:
-    print(dice, ":",count)
+    percentage = (count / maxRolls) * 100
+    print(str(dice) + " : " + str(count) + " : " + str(round(percentage, 2)) + "%")
     dice = dice + 1
 
 if __name__ == '__main__':
